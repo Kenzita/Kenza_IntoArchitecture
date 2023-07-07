@@ -1,0 +1,822 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    display: block;
+}
+
+img {
+    display: block;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.langues {
+    text-align: right;
+    margin: 2.5vw 8vw;
+    font-size: 1.3em;
+}
+
+nav {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 0 8%;
+
+    .logo {
+        width: 30%;
+
+        p:first-of-type {
+            font-size: 6em;
+            font-weight: 900;
+            line-height: .8;
+            padding: 0;
+        }
+
+        p:nth-of-type(2) {
+            font-weight: 800;
+            font-size: 1.99em;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    i {
+        color: white;
+    }
+
+    ul {
+        margin-right: 1.6vw;
+        display: flex;
+        width: 39%;
+        justify-content: space-around;
+
+        li {
+            a {
+                font-size: 1.9em;
+                font-weight: 700;
+
+                &:hover {
+                    border-bottom: solid black 1.5vh;
+                }
+            }
+
+        }
+    }
+}
+
+header {
+    margin: 5.6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .carrousel {
+        display: flex;
+        align-items: end;
+        position: relative;
+
+        img:first-of-type {
+            width: 82%;
+            z-index: 1;
+        }
+
+        img:nth-of-type(2) {
+            position: absolute;
+            left: 75%;
+            top: 60%;
+            z-index: 0;
+            width: 17%;
+        }
+
+        pre {
+            font-size: 2.5em;
+            font-weight: 900;
+            padding-bottom: 3.5vh;
+        }
+
+    }
+
+    .titre {
+        font-size: 7em;
+        text-transform: uppercase;
+        font-weight: 900;
+        position: absolute;
+        z-index: 2;
+        bottom: 60%;
+        right: 12%;
+
+        p:first-of-type {
+            line-height: 1.4;
+        }
+
+        p:nth-of-type(2) {
+            border-bottom: solid black 14px;
+            line-height: .9;
+        }
+    }
+}
+
+.projet {
+
+    margin: 0 2vw 0 7vw;
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 7vh;
+        font-size: 2em;
+    }
+
+    .projettext {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            width: 30%;
+            margin-right: 2.8vw;
+
+            &:last-of-type {
+                border: solid black 10px;
+                padding: 2.5%;
+                font-size: 3.8em;
+                font-weight: 800;
+                text-transform: uppercase;
+                line-height: 1.1;
+                padding-bottom: 9%;
+                width: 24%;
+            }
+        }
+    }
+
+    a {
+        color: white;
+        background-color: black;
+        width: 6.6vw;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+        margin-left: .5vw;
+        position: relative;
+        bottom: 4vh;
+    }
+}
+
+.information {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 90%;
+    margin: 0 auto;
+
+    .immeuble {
+        margin: 1.5%;
+        margin-bottom: 5%;
+        background-color: black;
+        color: white;
+        width: 51%;
+
+        img {
+            width: 100%;
+        }
+
+        .immeubletext {
+
+            p {
+                padding: 7% 4%;
+                font-size: larger;
+            }
+        }
+
+        a {
+            color: white;
+            width: 15%;
+            border: solid white 5px;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0% 2% 7% 3%;
+        }
+    }
+
+    .infos {
+
+        display: flex;
+        justify-content: space-around;
+
+        width: 48%;
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-top: solid black 13px;
+            width: 49%;
+            margin-right: 4%;
+
+            h3 {
+                margin-left: 8%;
+                margin-top: 15%;
+            }
+
+            h2 {
+                margin: 4% 8% 0 8%;
+                font-size: 2em;
+                font-weight: 800;
+            }
+
+            p {
+                margin-left: 8%;
+                font-size: 1.1em;
+                font-weight: light;
+                margin-bottom: 9%;
+                margin-top: 11%;
+            }
+
+            img {
+                margin-top: 7%;
+                width: 100%;
+            }
+
+            a {
+                background-color: black;
+                color: white;
+                width: 35%;
+                font-size: 1.2em;
+                text-transform: uppercase;
+                text-align: center;
+                margin: 18% 2% 7% 8%;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.firstprice {
+    display: flex;
+    margin-top: 25%;
+    justify-content: space-around;
+
+    .fptext {
+        margin-left: 5.5%;
+        width: 48%;
+
+        .ligne {
+            height: 1.8%;
+            background-color: black;
+            width: 42.5%;
+        }
+
+        h3 {
+            margin-left: 4%;
+            margin-top: 5%;
+        }
+
+        h2 {
+            margin: 3% 60% 0 4%;
+            font-size: 2em;
+            font-weight: 800;
+        }
+
+        p {
+            font-size: 1.3em;
+            font-weight: light;
+            margin: 5% 10% 8% 4%;
+        }
+
+        a {
+            margin-left: 4%;
+            margin-top: 15%;
+            color: white;
+            background-color: black;
+            width: 13%;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 800;
+
+        }
+
+    }
+
+    .fpimage {
+        width: 48%;
+        margin-right: 3.5%;
+        position: relative;
+
+        img {
+            width: 92%;
+
+        }
+
+        .text {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            border: solid black 11px;
+            width: 32%;
+            font-size: 6em;
+            font-weight: 900;
+            padding: 4% 3%;
+            bottom: 75%;
+            left: 48%;
+            line-height: 1.3;
+
+            p {
+                &:first-of-type {
+                    color: black;
+                }
+
+                &:nth-of-type(2) {
+                    color: white;
+                }
+            }
+        }
+
+        .into {
+            font-size: 9em;
+            transform: rotate(90deg);
+            font-weight: 900;
+            background: linear-gradient(to bottom, black 50%, white 50%);
+            background-clip: text;
+            color: transparent;
+            position: absolute;
+            bottom: 23%;
+            left: 71.5%;
+        }
+    }
+}
+
+footer {
+    width: 52%;
+    margin: 5% 7%;
+    margin-top: 15%;
+
+    h2 {
+        font-size: 2em;
+        margin-bottom: 2%;
+        font-weight: 800;
+    }
+
+    .contact {
+
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            width: 13%;
+        }
+    }
+}
+
+//  responsive 
+
+@media screen and (max-width:1200px) {
+    nav {
+
+        ul {
+            li {
+                a {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+
+    header {
+        .titre {
+            font-size: 4em;
+            bottom: 45%;
+        }
+
+        .carrousel {
+            img {
+                &:nth-of-type(2) {
+                    top: 55%;
+                }
+            }
+
+            pre {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    .projet {
+        .projettext {
+            p {
+                font-size: .8em;
+
+                &:last-of-type {
+                    font-size: 2.8em;
+                }
+            }
+
+        }
+    }
+
+    .information {
+        .infos {
+            .info {
+                h2 {
+                    font-size: 1.5em;
+                }
+
+                p {
+                    font-size: .8em;
+                }
+            }
+        }
+    }
+
+    .firstprice {
+        .fptext {
+            .ligne {
+                height: 10px;
+                width: 55%;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+
+        .fpimage {
+            .text {
+                font-size: 4em;
+            }
+
+            .into {
+                font-size: 5em;
+                bottom: 37%;
+                left: 73.6%;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    header {
+        .titre {
+            font-size: 3.5em;
+            bottom: 50%;
+        }
+
+        .carrousel {
+            img {
+                &:nth-of-type(2) {
+                    top: 55%;
+                }
+            }
+
+            pre {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    .firstprice {
+        align-items: center;
+
+        .fpimage {
+            .text {
+                font-size: 3em;
+                bottom: 70%
+            }
+
+            .into {
+                font-size: 4em;
+                bottom: 13%;
+                left: 74.6%;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:960px) {
+
+    header {
+        .titre {
+            font-size: 4em;
+            bottom: 65%;
+        }
+    }
+
+    .firstprice {
+        align-items: center;
+
+        .fptext {
+            .ligne {
+                height: 10px;
+                width: 55%;
+            }
+
+            h2 {
+                margin: 3% 30% 0 4%;
+
+            }
+
+
+        }
+
+        .fpimage {
+            .text {
+                font-size: 2.7em;
+                bottom: 70%
+            }
+
+            .into {
+                font-size: 4em;
+                bottom: 13%;
+                left: 73.6%;
+            }
+
+        }
+    }
+
+    footer {
+        .contact {
+            p {
+                width: 22%;
+                font-size: .9em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    nav {
+        i{
+            color: black;
+        }
+        .logo {
+            width: 10%;
+
+            p:first-of-type {
+                font-size: 4em;
+
+            }
+
+            p:nth-of-type(2) {
+                font-weight: 800;
+                font-size: .9em;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        i {
+            color: black;
+            width: 15%;
+        }
+
+        ul {
+            display: none;
+        }
+    }
+
+
+    header {
+        .titre {
+            font-size: 3em;
+            bottom: 45%;
+        }
+
+        .carrousel {
+            img {
+                &:nth-of-type(2) {
+                    top: 55%;
+                }
+            }
+
+            pre {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    .projet {
+        .projettext {
+            display: flex;
+            flex-wrap: wrap;
+
+            p {
+                font-size: .8em;
+
+                &:last-of-type {
+                    font-size: 2.8em;
+                    width: 100%;
+                    margin-top: 5%;
+                    text-align: center;
+                }
+            }
+
+        }
+
+        a {
+            width: 8.6vw;
+            text-align: center;
+            margin-left: 3%;
+          
+            bottom: 6vW;
+        }
+    }
+
+    .information {
+.immeuble{
+    width: 100%;
+}
+        flex-wrap: wrap;
+        .infos {
+width: 110%;
+            .info {
+                h2 {
+                    font-size: 1.5em;
+                }
+
+                p {
+                    font-size: .8em;
+                }
+            }
+        }
+    }
+    .firstprice {
+        align-items: center;
+     flex-wrap: wrap;
+
+        .fptext {
+            width: 100%;
+
+        }
+
+        .fpimage {
+            margin-top: 15%;
+            width: 90%;
+            .text {
+                width: 25%;
+                font-size: 3.5em;
+                bottom: 75%;
+                left: 55%;
+            }
+
+            .into {
+                font-size: 7em;
+                bottom: 18%;
+                left: 71.6%;
+            }
+
+        }
+    }
+
+    footer {
+        .contact {
+            p {
+                width: 30%;
+                font-size: .7em;
+            }
+        }
+    }
+}
+@media screen and (max-width:425px) {
+    body{
+        margin: 0 auto;
+    }
+.langues{
+    font-size: .7em;
+}
+    nav {
+        .logo {
+            p:first-of-type {
+                font-size: 3em;
+
+            }
+
+        }
+    }
+
+
+    header {
+        .titre {
+            font-size: 2em;
+            bottom: 55%;
+            right: 35%;
+           
+        }
+
+        .carrousel {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            img {
+                 &:first-of-type {
+            width: 100%;
+                &:nth-of-type(2) {
+                    display: none;
+                }
+            }
+
+            pre {
+                font-size: 1.5em;
+            }
+        }
+    }
+    }
+    .projet {
+        .projettext {
+          flex-direction: column;
+          flex-wrap: nowrap;
+          align-items: center;
+
+            p {
+                width: 90%;
+                font-size: .8em;
+                text-align: justify;
+    
+            }
+
+        }
+
+        a {
+            width: 8.6vw;
+            text-align: center;
+            margin-left: 3%;
+          
+            bottom: 6vW;
+        }
+    }
+
+    .information {
+        width: 100%;
+.immeuble{
+    width: 100%;
+}
+        flex-wrap: wrap;
+        .infos {
+width: 110%;
+flex-direction: column;
+align-items: center;
+            .info {
+                width: 100%;
+                h2 {
+                    font-size: 1.5em;
+                }
+
+                p {
+                    font-size: .8em;
+                }
+            }
+        }
+    }
+    .firstprice {
+        align-items: center;
+     flex-wrap: wrap;
+
+        .fptext {
+            width: 100%;
+
+        }
+
+        .fpimage {
+            margin-top: 15%;
+            width: 90%;
+            .text {
+                width: 15%;
+                font-size: 1.5em;
+                bottom: 75%;
+                left: 55%;
+            }
+
+            .into {
+                font-size: 4em;
+                bottom: 18%;
+                left: 71%;
+            }
+
+        }
+    }
+
+   
+}
+ footer {
+         width: 100%;
+        .contact {
+           
+            p {
+                width: 50%;
+                font-size: .5em;
+            }
+        }
+    }
